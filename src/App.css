@@ -1,0 +1,7 @@
+body {
+  background: url(back7.jpg) center;
+  -webkit-backface: cover;
+  -moz-background: cover;
+  -o-background: cover;
+  background: cover;
+}

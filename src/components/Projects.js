@@ -13,7 +13,7 @@ import {
 import Navbar from "./Navbar";
 import back1 from "../backC.png";
 import back2 from "../backG.png";
-import back3 from "../backI.png";
+
 import back4 from "../up.png";
 
 const useStyles = makeStyles({
@@ -116,45 +116,7 @@ const Projects = () => {
 							</CardActions>
 						</Card>
 					</Grid>
-					<Grid container justify="center">
-						<Grid item xs={10} sm={6} md={0}>
-							<Card className={classes.cardContainer}>
-								<CardMedia
-									component="img"
-									alt="project1"
-									height="340"
-									image={back3}
-								/>
-								<CardContent className={classes.cardContent}>
-									<Typography gutterBottom variant="h5">
-										IT-Logger
-									</Typography>
-									<Typography variant="body2" color="#fff" component="p">
-										The It logger is a logging system to keep track of the work
-										a technician did for the day
-									</Typography>
-								</CardContent>
-								<CardActions>
-									<Button
-										size="small"
-										color="primary"
-										a
-										target="blnk"
-										href="backI.png">
-										Open
-									</Button>
-									<Button
-										size="small"
-										color="primary"
-										a
-										target="blnk"
-										href="https://www.github.com/Ryan21b/IT-LOGGER">
-										View Code
-									</Button>
-								</CardActions>
-							</Card>
-						</Grid>
-					</Grid>
+
 					<Grid container justify="center">
 						<Grid item xs={10} sm={6} md={0}>
 							<Card className={classes.cardContainer}>

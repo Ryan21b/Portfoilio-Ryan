@@ -13,7 +13,8 @@ import {
 import Navbar from "./Navbar";
 import back1 from "../backC.png";
 import back2 from "../backG.png";
-
+import back5 from "../react1.png";
+import back6 from "../code.png";
 import back4 from "../up.png";
 
 const useStyles = makeStyles({
@@ -150,6 +151,85 @@ const Projects = () => {
 										a
 										target="blnk"
 										href="https://www.github.com/Ryan21b/Intergrated-social-media-site">
+										View Code
+									</Button>
+								</CardActions>
+							</Card>
+						</Grid>
+					</Grid>
+					<Grid container justify="center">
+						<Grid item xs={10} sm={6} md={0}>
+							<Card className={classes.cardContainer}>
+								<CardMedia
+									component="img"
+									alt="project1"
+									height="340"
+									image={back5}
+								/>
+								<CardContent className={classes.cardContent}>
+									<Typography gutterBottom variant="h5">
+										Reaction Timer
+									</Typography>
+									<Typography variant="body2" color="#fff" component="p">
+										Test your reaction time by clicking on the shapes , created
+										using javascript
+									</Typography>
+								</CardContent>
+								<CardActions>
+									<Button
+										size="small"
+										color="primary"
+										a
+										target="blnk"
+										href="https://ryan21b.github.io/JS-reaction-test/">
+										Open
+									</Button>
+									<Button
+										size="small"
+										color="primary"
+										a
+										target="blnk"
+										href="https://www.github.com/Ryan21b/JS-reaction-test">
+										View Code
+									</Button>
+								</CardActions>
+							</Card>
+						</Grid>
+					</Grid>
+					<Grid container justify="center">
+						<Grid item xs={10} sm={6} md={0}>
+							<Card className={classes.cardContainer}>
+								<CardMedia
+									component="img"
+									alt="project1"
+									height="340"
+									image={back6}
+								/>
+								<CardContent className={classes.cardContent}>
+									<Typography gutterBottom variant="h5">
+										Code Runner
+									</Typography>
+									<Typography variant="body2" color="#fff" component="p">
+										Write code and run it using code runner , it can run html
+										css and javascript and display code outputs, built with
+										html, css , jquery and javascript
+									</Typography>
+								</CardContent>
+								<CardActions>
+									<Button
+										size="small"
+										color="primary"
+										a
+										target="blnk"
+										href="https://ryan21b.github.io/code-runner/">
+										Open
+									</Button>
+									<Button
+										size="small"
+										color="primary"
+										a
+										target="blnk"
+										href="https://www.github.com/Ryan21b/code-runner">
 										View Code
 									</Button>
 								</CardActions>

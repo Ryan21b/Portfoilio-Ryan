@@ -10,31 +10,17 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 
 function App() {
-    return ( <
-        >
-        <
-        CssBaseline / >
-        <
-        Route exact path = "/"
-        component = { Home }
-        />{" "} <
-        Route path = "/cv"
-        component = { Cv }
-        />{" "} <
-        Route path = "/projects"
-        component = { Projects }
-        />{" "} <
-        Route path = "/skills"
-        component = { Skills }
-        />{" "} <
-        Route path = "/testimonials"
-        component = { Testimonials }
-        />{" "} <
-        Route path = "/contact"
-        component = { Contact }
-        />{" "} <
-        />
-    );
+	return (
+		<>
+			<CssBaseline />
+			<Route exact path="/" component={Home} />{" "}
+			<Route path="/cv" component={Cv} />{" "}
+			<Route path="/projects" component={Projects} />{" "}
+			<Route path="/skills" component={Skills} />{" "}
+			<Route path="/testimonials" component={Testimonials} />{" "}
+			<Route path="/contact" component={Contact} />{" "}
+		</>
+	);
 }
 
 export default App;

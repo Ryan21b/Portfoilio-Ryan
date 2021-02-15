@@ -1,0 +1,23 @@
+body {
+	text-align: center;
+
+	background-attachment: fixed;
+	background-size: cover;
+	color: #ccc;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+#head {
+	margin-top: 20vh;
+	color: white;
+	overflow: hidden;
+}
+.container {
+	padding-top: 5%;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+#button {
+	margin-top: 1rem;
+}

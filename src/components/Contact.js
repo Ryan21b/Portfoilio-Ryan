@@ -1,122 +1,80 @@
 import React from "react";
-import { makeStyles, withStyles } from "@material-ui/styles";
-import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
-import SendIcon from "@material-ui/icons/Send";
+import emailjs from "emailjs-com";
+import "../Con.css";
 import Navbar from "./Navbar";
-import { Card } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({
-  mainContainer: {
-    background: "#222",
-  },
-  form: {
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    position: "absolute",
-  },
-  button: {
-    marginTop: "1rem",
-    color: "black",
-  },
-}));
-
-const InputField = withStyles({
-  root: {
-    "& lablel.Mui-focused": {
-      color: "#222",
-    },
-    "& label": {
-      color: "black",
-    },
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "black",
-      },
-      "&:hover fieldset": {
-        borderColor: "black",
-      },
-      "& Mui-focused fieldset": {
-        borderColor: "black",
-      },
-    },
-  },
-})(TextField);
+function sendEmail(e) {
+	e.preventDefault();
+	//user_PFmNr1GLtD7iauN1i4Iks
+	emailjs
+		.sendForm(
+			"default_service",
+			"template_qc9is5c",
+			e.target,
+			"user_PFmNr1GLtD7iauN1i4Iks"
+		)
+		.then(
+			(result) => {
+				console.log(result.text);
+			},
+			(error) => {
+				console.log(error.text);
+			}
+		);
+}
 
 const Contact = () => {
-  const classes = useStyles();
-  return (
-    <>
-      <Navbar />
-      <Box component="div" className={classes.mainContainer}>
-        <Grid container justify="center">
-          <Box component="form" className={classes.form}>
-            <Card>
-              <form action="https://formspree.io/mayppjel" method="POST">
-                <Typography
-                  variant="h5"
-                  style={{
-                    color: "black",
-                    textAlign: "center",
+	return (
+		<>
+			<Navbar />
 
-                    textTransform: "uppercase",
-                  }}
-                >
-                  Contact me...
-                </Typography>
-                <InputField
-                  fullWidth={true}
-                  label="Name"
-                  variant="standard"
-                  name="sender_name"
-                  margin="dense"
-                  size="medium"
-                  required
-                />
-                <InputField
-                  fullWidth={true}
-                  label="Email"
-                  color="#222"
-                  name="sender_email"
-                  variant="standard"
-                  margin="dense"
-                  size="medium"
-                  required
-                />
-                <InputField
-                  fullWidth={true}
-                  label="Company Name"
-                  name="sender_company"
-                  variant="standard"
-                  margin="dense"
-                  size="medium"
-                  required
-                />
-                <InputField
-                  fullWidth={true}
-                  label="Message"
-                  name="sender_message"
-                  variant="standard"
-                  margin="dense"
-                  size="medium"
-                  required
-                />
-                <Button
-                  type="submit"
-                  variant="outlined"
-                  fullWidth={true}
-                  endIcon={<SendIcon />}
-                  className={classes.button}
-                >
-                  Contact Me....
-                </Button>
-              </form>
-            </Card>
-          </Box>
-        </Grid>
-      </Box>
-    </>
-  );
+			<div className="container">
+				<h1 id="head">Contact Me </h1>
+				<form id="form" onSubmit={sendEmail}>
+					<input
+						type="text"
+						id="Name"
+						name="Name"
+						className="form-control mb-4"
+						placeholder="Name"
+						required
+					/>
+
+					<input
+						type="type"
+						id="Email"
+						name="Email"
+						className="form-control mb-4"
+						placeholder="E-mail"
+						required
+					/>
+					<input
+						type="type"
+						id="Address"
+						name="Address"
+						className="form-control mb-4"
+						placeholder="Address"
+					/>
+					<div className="form-group">
+						<textarea
+							className="form-control rounded-0"
+							id="Message"
+							name="Message"
+							rows="3"
+							placeholder="Message"
+							required></textarea>
+					</div>
+
+					<input
+						className="form-control mb-4 btn-primary"
+						type="submit"
+						value="Send"
+						id="button"
+					/>
+				</form>
+			</div>
+		</>
+	);
 };
 
 export default Contact;

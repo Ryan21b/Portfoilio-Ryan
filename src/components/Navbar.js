@@ -120,6 +120,7 @@ const Navbar = () => {
 						<Typography variant="h4" style={{ color: "yellow" }}>
 							Portfolio
 						</Typography>
+
 						<MobilLeftMenuSlider
 							anchor="left"
 							open={state.left}

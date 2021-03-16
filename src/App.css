@@ -3,3 +3,6 @@ body {
 	height: 100vh;
 	background: cover;
 }
+#right {
+	text-align: right;
+}

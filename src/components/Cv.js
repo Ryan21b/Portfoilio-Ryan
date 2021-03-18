@@ -172,10 +172,25 @@ const Cv = () => {
 								variant="subtitle1"
 								align="center"
 								style={{ color: "white" }}>
-								25 May - 31 September I worked for PnS as a Merchandiser at Pick
-								n Pay for 6 Months,this was too gain work experince and learn
-								about workplace dynamics.My basic roles was Stock rotation and
-								admin
+								25 May - 29 September
+							</Typography>
+							<Typography
+								variant="subtitle1"
+								align="center"
+								style={{ color: "white" }}>
+								I worked for PnS as a Merchandiser at Pick n Pay for 6
+								Months,this was too gain work experince and learn about
+								workplace dynamics.
+								<br></br>
+								<br></br>
+								<b>
+									<h6>My duties:</h6>
+								</b>
+								<li>Stock rotation</li>
+								<li>Admin</li>
+								<li>Packing stock into shelves</li>
+								<li>Cleaning shelves</li>
+								<li>Packing stock from trucks</li>
 							</Typography>
 						</Box>
 						<Typography
@@ -200,10 +215,21 @@ const Cv = () => {
 								variant="subtitle1"
 								align="center"
 								style={{ color: "white" }}>
-								5 December - 21 February 2020 I worked at Rawson Properties as a
-								Trainee Sales partner (Refferal Agent) for the aunction section
-								,my roles where calling potential clients , meeting with
-								potential clients,and Finding potential clients.
+								5 December - 22 February 2020
+							</Typography>
+							<Typography
+								variant="subtitle1"
+								align="center"
+								style={{ color: "white" }}>
+								I worked at Rawson Properties as a Trainee Sales partner
+								(Refferal Agent) for the aunction section.
+								<br></br>
+								<br></br>
+								<h6>My duties:</h6>
+								<li>Cold calling</li>
+								<li>Meeting with potential clients</li>
+								<li>Finding potential clients.</li>
+								<li>Finding viable property</li>
 							</Typography>
 						</Box>
 						<Typography
@@ -228,11 +254,28 @@ const Cv = () => {
 								variant="subtitle1"
 								align="center"
 								style={{ color: "white" }}>
-								1 October 2020 - 5 February I worked as an intern developer at
-								Masterparts Epping for 5 months doing Web design and Bug fixing
-								Other things I learned during the internship was : Seo Marketing
-								, Social Media Marketing, SDLC (System Development Life Cycle
-								framework),Google Analytics
+								1 October 2020 - 28 February
+							</Typography>
+							<Typography
+								variant="subtitle1"
+								align="center"
+								style={{ color: "white" }}>
+								I worked as an intern developer at Masterparts Epping for 5
+								months.
+								<br></br>
+								<br></br>
+								<h6>My duties:</h6>
+								<li>Web design</li>
+								<li>Bug fixing</li>
+								<li>Building Websites From scratch</li>
+								<li>Project Management</li>
+								<li>Developing online apps</li>
+								<br></br>
+								<h6>Additional Training in:</h6>
+								<li>Seo Marketing</li>
+								<li>Social Media Marketing</li>
+								<li>SDLC (System Development Life Cycle framework)</li>
+								<li>Google Analytics</li>
 							</Typography>
 						</Box>
 					</Box>
@@ -294,8 +337,12 @@ const Cv = () => {
 								align="center"
 								style={{ color: "white" }}>
 								I spent 2 years studying Business Management at Northlink
-								College ,where I was taught Entreprenuership,Management of a
-								business,Accounting,Sales and Public Relations.
+								College. Where I was taught:
+								<li>Entreprenuership</li>
+								<li>Management of a business</li>
+								<li>Accounting</li>
+								<li>Sales</li>
+								<li>Public Relations</li>
 							</Typography>
 						</Box>
 
@@ -321,7 +368,17 @@ const Cv = () => {
 								variant="subtitle1"
 								align="center"
 								style={{ color: "white" }}>
-								I am currently studying coding at Life Choices academy
+								I spent 6 months doing a coding course at life choices academy.
+								Where i became proficient in:
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Bootstrap</li>
+								<li>Javascript</li>
+								<li>ReactJs</li>
+								<li>NodeJS</li>
+								<li>MySql</li>
+								<li>MongoDB</li>
+								<li>Python</li>
 							</Typography>
 						</Box>
 					</Box>

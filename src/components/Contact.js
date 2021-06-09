@@ -16,7 +16,6 @@ function sendEmail(e) {
 		.then(
 			(result) => {
 				console.log(result.text);
-				alert("Message sent");
 			},
 			(error) => {
 				console.log(error.text);

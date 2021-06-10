@@ -136,7 +136,7 @@ function Testimonials() {
 						</Typography>
 					</CardContent>
 					<CardActions disableSpacing>
-						<IconButton onClick={handleOpen}>
+						<IconButton className={classes.jwTest} onClick={handleOpen}>
 							<ExpandMoreIcon />
 						</IconButton>
 					</CardActions>
